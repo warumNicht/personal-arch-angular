@@ -4,8 +4,8 @@ import { CreateComponent } from '../create/create.component';
 import { EditComponent } from '../edit/edit.component';
 
 const routes: Routes = [
-  { path: 'create', component: CreateComponent },
-  { path: 'edit', component: EditComponent },
+  { path: 'admin/category/create', component: CreateComponent },
+  { path: 'admin/category/edit', component: EditComponent },
 ];
 
 @NgModule({
