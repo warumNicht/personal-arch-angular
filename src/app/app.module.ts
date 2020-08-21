@@ -20,7 +20,6 @@ import { AdminModule } from './admin-module/admin.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

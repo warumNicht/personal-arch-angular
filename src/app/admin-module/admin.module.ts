@@ -8,7 +8,6 @@ import { CategoryModule } from './category/category.module';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    CategoryModule
   ],
 })
 export class AdminModule { }
