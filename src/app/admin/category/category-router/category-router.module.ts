@@ -9,7 +9,7 @@ export const CATEGORY_ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(CATEGORY_ROUTES)],
+  imports: [RouterModule.forChild(CATEGORY_ROUTES)],
   exports: [RouterModule]
 })
 export class CategoryRouterModule { }
