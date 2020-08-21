@@ -4,11 +4,11 @@ import { AdminComponent } from './admin/admin.component';
 
 
 const routes: Routes = [
-  { path: 'admin', component: AdminComponent },
+  { path: '', component: AdminComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AdminRoutingModule { }
