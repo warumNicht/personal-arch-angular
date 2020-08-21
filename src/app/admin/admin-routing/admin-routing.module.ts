@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CategoryModule } from '../category/category.module';
+import { CATEGORY_ROUTES } from '../category/category-router/category-router.module';
 
-const routes: Routes = [
+export const ADMIN_ROUTES: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   // { path: 'category', component: UserComponent },
-  { path: 'admin/category', component: CategoryModule },
+  { path: 'category', children: CATEGORY_ROUTES },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ADMIN_ROUTES)],
   exports: [RouterModule]
 })
 export class AdminRoutingModule { }
