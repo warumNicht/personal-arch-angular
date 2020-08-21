@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
-import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { AdminModule } from './admin/admin.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
