@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateCategoryComponent } from './create-category/create-category.component';
 import { EditCategoryComponent } from './edit-category/edit-category.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'create', pathMatch: 'full' },
   { path: 'create', component: CreateCategoryComponent },
   { path: 'edit', component: EditCategoryComponent },
 ];
